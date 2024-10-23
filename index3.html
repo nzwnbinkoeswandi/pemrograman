@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Hubungi Kami</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background-color: #ffffff46;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        
+        input:focus,
+        textarea:focus {
+            border-color: #0066cc;
+            outline: none;
+        }
+        
+        textarea {
+            resize: vertical;
+        }
+        
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0066cc;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2 style="color: white;">Form Pendaftaran</h2>
+        <div class="form-group">
+            <label for="nama" style="color: white;">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+        </div>
+        <div class="form-group">
+            <label for="email" style="color: white;">Email</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+        </div>
+        <div class="form-group">
+            <label for="password" style="color: white;">Password</label>
+            <input type="password" password="password" name="password" placeholder="Masukkan password" required>
+        </div>
+        <div class="form-group">
+            <label for="telepon" style="color: white;">Nomer Telepon </label>
+            <input type="tel" telepon="telepon" name="telp" placeholder="Masukkan Nomer Telepon" required>
+        </div>
+
+        <button type="submit">Kirim Pesan</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
